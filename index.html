@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <title>Home Page</title>
   <meta charset="UTF-8">
@@ -35,14 +35,14 @@
 </head>
 <body>
 <!-- NAVBAR -->
-    <header class="container-fluid bg-dark pt-4  ">
+    <header class="container-fluid bg-dark pt-4 text-center ">
       <img src="Assets/Asset_4.png" alt="Mxo Masuku" class="img-fluid center bg-dark w-50 h-25">
       </header>
       <nav class="navbar navbar-expand-md bg-dark navbar-dark">  
           <a href="#"><i class="fas fa-bars navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu"></i></a>
           <div class="collapse navbar-collapse justify-content-center" id="navmenu">
-          <ul class="navbar-nav text-white-50 ">
-            <li class="nav_item nav_item_1"><a href="" class="nav-link ">Home Page</a></li>
+          <ul class="navbar-nav text-white-50 text-uppercase">
+            <li class="nav_item nav_item_1"><a href="" class="nav-link">Home Page</a></li>
             <li class="nav_item nav_item_2"><a href=""class="nav-link">Explore Gallery</a></li>
             <li class="nav_item nav_item_3"><a href=""class="nav-link">About Us</a></li> 
             <li class="nav_item nav_item_4"><a href="" class="nav-link text-warning">Shop Online</a></li> 
@@ -52,52 +52,96 @@
 
       <!-- Showcase -->
 <main>
-<section class="hero">
-  <h1>Your destination for exquisite top tier, luxury Jewellery</h1>
+<section class="">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item active">
+        <img src="Assets/solar-panels.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block align-text-center">
+          <h5 class="text-black fs-2 shadow-sm ">Large scope solar projects</h5>
+          <p>We do macro-solar installation projects</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Assets/lesotho.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-xxl-center">Remote Jobs</h5>
+          <p>Anywhere you want solar energy. In support of rural and disadvantaged communities</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Assets/ascension.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Best quality projects</h5>
+          <p>Sleep in peace knowing that your job has been done perfectly</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ </section>
 
-</section>
-<section class="newsletter_container">
-  <h2>Get <span>50%</span>off on exclusive masterpieces like this when you sign in to our newsletter</h2>
- <div><img src="qAssets/diamond.png" alt="" width="100%"></div> 
-<form action="#" method="post" class="form">
-  <label for="email">
-    <input type="email" name="email" id="email" class="email"placeholder="enter email" required>
-  </label>
-  <input type="submit" value="Subscribe" class="btn_email">
-</form>
-</section>
+ <!-- Newsletter -->
+ <section class="container">
+  <div class="bg-black mt-4 text-center pt-2">
+    <h2> <span class="text-warning text-uppercase">Sign up</span>  for our newsletter</h2>
+    <img src="Assets/diamond.png" alt="" class="w-100">
+    <form action="" method="POST" class="pb-4 text-center">
+      <input type="email" name="email" id="#email" class="rounded-5 btn-group lh-lg text-center" placeholder="example@gmail.com" required>
+      <input type="submit" value="Subscribe" class="btn btn-primary rounded-5 btn-group text-center bg-warning">
+      </form>
+  </div>
 
-<section class="cards">
-  <article class="">
-    <h2>Rings for that special someone from this amazing collection</h2>
-    <div> <img src="qAssets/wedding-rings.jpg" class="card_image" alt=""></div>
-    <p>Sapphire, gold, diamond, titanium, or maybe something non-metallic to show 
-      your partner how much they mean to you. We have it all waiting for you. See our catalogue for more details</p>.
-  </article>
-  <article class="">
-    <h2>Never be forgotten. Order a unique, richly crafted family heirloom</h2>
-    <div> <img src="qAssets/pocket-watch.jpg" class="card_image" alt=""></div>
-    <p>We know your family is important to you. That's why we help you design 
-      an immortal gift for them. Give them a priceless masterpiece to admire through the ages to your great great 
-      grandkids. We don't just cut diamonds, 
-      craft steel, we see them as instruments to bring honor to your kin.</p>
-  </article>
-  <article class="">
-    <h2>Are you looking for something different? </h2>
-    <div> <img src="qAssets/assorted.webp" class="card_image" alt=""></div>
-   
-    <p>We wouldn't be jewellers if we didn't pride in our ability to surprise our clients. In this catalogue you will 
-      find nothing but high-end pieces crafted to perfection by our team. Bracelets, necklaces, earrings, cufflinks. We got it for you.</p>
-  </article>
+ </section>
+
+ <!-- Main content -->
+
+<section class="container my-5 md-my-8">
+  <div class="d-md-flex gap-4 ">
+    <article class="rounded-2 bg-light p-2">
+      <h3 class="text-primary text-uppercase fs-5">Rings for that special someone from this amazing collection</h3>
+      <div> <img src="Assets/wedding-rings.jpg" class="w-100 h-25" alt=""></div>
+      <p class="text-black-50">Sapphire, gold, diamond, titanium, or maybe something non-metallic to show 
+        your partner how much they mean to you. We have it all waiting for you. See our catalogue for more details</p>
+    </article>
+    <article class="rounded-2 bg-light p-2">
+      <h3 class="text-primary text-uppercase fs-5">Never be forgotten. Order a unique, richly crafted family heirloom</h3>
+      <div> <img src="Assets/pocket-watch.jpg" class="w-100 h-md-25" alt=""></div>
+      <p  class="text-black-50">We know your family is important to you. That's why we help you design 
+        an immortal gift for them. Give them a priceless masterpiece to admire through the ages to your great great 
+        grandkids. We don't just cut diamonds, 
+        craft steel, we see them as instruments to bring honor to your kin.</p>
+    </article>
+    <article class="rounded-2 bg-light p-2 flex-grow-1">
+      <h3 class="text-primary text-uppercase fs-5">Are you looking for something different? </h3>
+      <div> <img src="Assets/assorted.webp" class="w-100" alt=""></div>
+     
+      <p  class="text-black-50">We wouldn't be jewellers if we didn't pride in our ability to surprise our clients. In this catalogue you will 
+        find nothing but high-end pieces crafted to perfection by our team. Bracelets, necklaces, earrings, cufflinks. We got it for you.</p>
+    </article>
+  </div>
+
 </section>
 </main>
 
-<footer class="footer">
+<footer class="footer bg-black text-center">
   <div class="footer_logo">
-    <img src="<!----Assets/Asset_4.png----->" alt="">
+    <img src="Assets/Asset_4.png" alt="" class="w-25">
   </div>
   <div>
-    <small>&copy; Copyright 2022, Mangata & Gallo</small>
+    <small class="text-white-50">&copy; Copyright 2022, Mangata & Gallo</small>
   </div>
 
   <div class="social_links">
