@@ -1,0 +1,28 @@
+body{
+    background: url(Assets/solar-panels.jpg) no-repeat center center/cover;
+    height: 100vh;
+
+}
+.question{
+    position: relative;
+}
+.question::after{
+    content: '+';
+    position: absolute;
+    right: 0px;
+
+}
+.answer{
+    overflow: hidden;
+    height: 0px;
+}
+
+.content-container.active .answer{
+    height: 8rem;
+}
+.content-container.active .question{
+    transition: .5s;
+    font-size:18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

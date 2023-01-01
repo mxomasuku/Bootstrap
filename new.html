@@ -29,12 +29,16 @@
 
     <section class="bg-dark text-light p-5 text-center">
         <div class="container d-sm-flex">
-            <div>
-                <h1>
-                    Hello. This the <span class="text-warning">Hero</span>
-                                </h1>
-                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas?</p>
-            </div>
+            <div class="border border-primary border-2 rounded-5 pb-4">
+              <h2 class="fs-3 text-danger pt-2 fw-bold"> JS QUOTE OF THE DAY</h2>
+               <div class="text-area p-4">
+                <h3 class="quote">"Akanga nyimo avangarara"</h3>
+                <p class="person text-uppercase mt-4 text-black bg-white">Duramazwi</p>
+               </div>
+
+  
+                                <button class="btn btn-warning rounded-5 text-center" id="new_quote">Create Quote</button>
+                              </div>
 
             <img src="Assets/pair-pro.svg" alt="" class="img-fluid w-50 d-sm-block d-none">
         </div>
@@ -47,7 +51,7 @@
                 Sign Up For Our Newsletter
             </h3>
             <form action="" class=" d-flex justify-content-around gap-sm-2 gap-lg-4 ">
-                <label for="email"><input type="email" name="email" id="email" placeholder="Enter email" class="py-1 d-bloc w-100"></label>
+                <label for="email"><input type="email" name="email" id="email" placeholder="Enter email" class="py-1 d-bloc w-100 "></label>
               <input type="submit" value="Subscribe" class="bg-dark btn text-white-50">
             </form>
         </div>
@@ -58,18 +62,18 @@
         <div class="row">
             <div class="col-md">
                 <div class="card bg-dark text-light">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center" id="addStuff">
                        
                         <div class="h1">
                             <i class="bi bi-router-fill"></i>
                         </div>
-                        <h3>Lorem ipsum dolor, sit amet consectetaepe
+                        <h3 id="small-title">Lorem ipsum dolor, sit amet consectetaepe
                              aliquam.</h3>
-                        <a href="" class="btn bg-primary text-white-50">Read More</a>
+                        <a href="#"  class=" readmorebtn1 btn bg-primary text-white-50">Read More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md mt-2">
+            <div class="col-md mt-2 cntrhse">
                 <div class="card bg-dark text-light">
                     <div class="card-body text-center">
                        
@@ -78,7 +82,7 @@
                         </div>
                         <h3>Lorem ipsum dolor, sit amet consectetaepe
                              aliquam.</h3>
-                        <a href="" class="btn bg-primary text-white-50">Read More</a>
+                        <a href="" class="btn bg-primary text-white-50 buttoncntr">Read More</a>
                     </div>
                 </div>
             </div>
@@ -188,7 +192,7 @@
               <a href=""><i class="bi bi-twitter"></i></a>
               <a href=""><i class="bi bi-github"></i></a>
               <a href=""><i class="bi bi-linkedin"></i></a>
-              <a href=""><i class="bi bi-mastodon"></i></a>
+              <a href="" onclick= "alert('say hello to the mastodon')"><i class="bi bi-mastodon"></i></a>
           </div>
         </div>
                          
@@ -200,7 +204,7 @@
     <div class="row gap-4">
         <div class="col-md">
             <h2 class="text-center mb-4"></h2>
-            <ul class="list-group list-group-flush lead">
+            <ul class="list-group list-group-flush lead detailsList">
                 <li class="list-group-item"><span class="fw-bold">Main Location:</span>50 Main Street Gondwana</li>
                 <li class="list-group-item"><span class="fw-bold">Student Email:</span>example@email.com</li>
                 <li class="list-group-item"><span class="fw-bold">Enrollment Email:</span>example@email.com</li>
@@ -231,6 +235,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-
+<script src="/index.js"></script>
 </body>
 </html>
